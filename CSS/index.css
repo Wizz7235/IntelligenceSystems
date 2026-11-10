@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+#menu_btn1{
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 0 10px;
+    
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+
+#menu_btn1:hover{
+    background: gray;
+}
+
+#menu{
+    width: 250px;
+    min-height: 100vh;
+    background: rgb(148, 194, 251);
+    padding: 25px 15px;
+
+    position: relative;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+
+#menu.hide{
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#menu_btn2{
+    position:absolute;
+    top: 10px;
+    right: 5px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+#menu h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+#menu a{
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+#menu a:hover{
+    background: rgb(101, 138, 183) ;
+}
